@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&subset=cyrillic');
+body {
+  font: 300 20px/1.6 $Rubik;
+  color: $fontBlack;
+  background: #f0f0f0;
+}
+
+html {
+  font-size: .7810vw;
+}
+
+.container {
+  width: 100%;
+  max-width: 1570px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+a {
+  transition: color $time;
+  &:hover {
+    color: #ff1a1a;
+  }
+}

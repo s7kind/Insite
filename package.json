@@ -1,0 +1,50 @@
+{
+  "name": "blank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npm i --dev",
+    "dev": "cross-env NODE_ENV=development gulp",
+    "host": "cross-env NODE_ENV=development gulp host",
+    "build": "cross-env NODE_ENV=production gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliitsupylo/gulp-blank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitaliitsupylo/gulp-blank/issues"
+  },
+  "homepage": "https://github.com/vitaliitsupylo/gulp-blank#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.6",
+    "cross-env": "^5.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-unit": "^1.2.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "markdown": "^0.5.0",
+    "node-notifier": "^5.2.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.5"
+  },
+  "dependencies": {
+    "flatpickr": "^4.5.1",
+    "scroll-parallax": "^2.1.0",
+    "scrollreveal": "^4.0.0",
+    "vanilla-text-mask": "^5.0.1",
+    "videojs-youtube": "^2.6.0",
+    "xhr": "^2.5.0"
+  }
+}
