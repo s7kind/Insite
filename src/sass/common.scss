@@ -18,8 +18,8 @@ html {
 }
 
 a {
-  transition: color $time;
+  transition: color $time !important;
   &:hover {
-    color: #ff1a1a;
+    color: #ff1a1a !important;
   }
 }

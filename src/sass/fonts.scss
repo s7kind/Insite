@@ -1,12 +1,12 @@
 /*_Font_*/
 @font-face {
-  font-family: '_Font_';
-  src: urlCss('fonts/_Font_/Regular/_Font_.eot');
-  src: urlCss('fonts/_Font_/Regular/_Font_.eot') format('embedded-opentype'),
-  urlCss('fonts/_Font_/Regular/_Font_.woff2') format('woff2'),
-  urlCss('fonts/_Font_/Regular/_Font_.woff') format('woff'),
-  urlCss('fonts/_Font_/Regular/_Font_.ttf') format('truetype'),
-  urlCss('fonts/_Font_/Regular/_Font_.svg') format('svg');
+  font-family: 'Gosha';
+  src: urlCss('fonts/Gosha Sans/GoshaSans-Regular.eot');
+  src: urlCss('fonts/Gosha Sans/GoshaSans-Regular.eot') format('embedded-opentype'),
+  urlCss('fonts/Gosha Sans/GoshaSans-Regular.woff2') format('woff2'),
+  urlCss('fonts/Gosha Sans/GoshaSans-Regular.woff') format('woff'),
+  urlCss('fonts/Gosha Sans/GoshaSans-Regular.ttf') format('truetype'),
+  urlCss('fonts/Gosha Sans/GoshaSans-Regular.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }

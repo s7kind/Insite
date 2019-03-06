@@ -1,6 +1,7 @@
 .first_block {
   padding-top: 212px;
   position: relative;
+
   .svg_bg {
     position: absolute;
     top: 0;
@@ -11,17 +12,22 @@
     transform: translateY(-10%);
     z-index: 2;
   }
+
   &:before {
     position: absolute;
-    content: 'insite';
-    top: 50%;
-    left: 0;
-    text-shadow: 1px 1px 1px #d6d6d6;
+    content: 'insite insite';
+    white-space: nowrap;
+    top: 47%;
+    left: -10%;
+    text-shadow: 1px 2px 10px #d6d6d6;
     color: #f0f0f0;
     font-family: $IBM;
     font-size: 326px;
     font-weight: 700;
+    width: 110%;
+    overflow: hidden;
   }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -35,6 +41,7 @@
     max-width: 820px;
     margin-right: 87px;
     margin-bottom: 186px;
+
     .title_block {
       text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
       font-family: $IBM;
@@ -57,6 +64,7 @@
       p {
         position: relative;
         z-index: 2;
+
         &:nth-child(2) {
           align-self: flex-end;
         }
@@ -79,12 +87,14 @@
       }
     }
   }
+
   .first_block__middle {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 138px;
     position: relative;
+
     &:after {
       position: absolute;
       bottom: -138px;
@@ -94,6 +104,7 @@
       background: #000000;
       content: '';
     }
+
     .title {
       width: 100%;
       max-width: 500px;
@@ -101,11 +112,14 @@
       font-size: 96px;
       font-weight: 400;
       line-height: 113px;
+      font-family: $Gosha;
     }
+
     .first_block__middle_text {
       width: 100%;
       max-width: 1020px;
       display: flex;
+
       p {
         flex: 1 1 45%;
         margin-right: 46px;
@@ -114,37 +128,170 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 33px;
+
         &:last-child {
           margin-right: 0;
         }
       }
     }
   }
+
   .first_block__bottom {
     padding: 46px 0;
     display: flex;
     justify-content: space-between;
+
     .first_block__bottom_elem {
       flex: 1 1 30%;
       margin-right: 30px;
       width: 100%;
       max-width: 490px;
+
       &:last-child {
         margin-right: 0;
       }
+
       h4 {
         color: #000000;
         font-size: 32px;
         font-weight: 400;
         line-height: 38px;
         margin-bottom: 16px;
+        font-family: $Gosha;
       }
+
       p {
         font-family: $Rubik;
         font-size: 16px;
         font-weight: 400;
         line-height: 27px;
       }
+    }
+  }
+}
+
+.projects {
+  padding-top: 273px;
+  position: relative;
+  margin-bottom: 250px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    color: #000000;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 113px;
+    margin-bottom: 75px;
+    font-family: $Gosha;
+  }
+
+  .projects_box {
+    width: 100%;
+    max-width: 1025px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    counter-reset: list;
+
+    .projects_elem {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 160px;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: -170px;
+        top: -90px;
+        text-shadow: 1px 2px 10px #d6d6d6;
+        color: #f0f0f0;
+        font-family: $IBM;
+        font-size: 206px;
+        font-weight: 700;
+        counter-increment: list;
+        content: '0' counter(list);
+        z-index: 1;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 2;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .projects_elem__category {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+
+        a {
+          color: #000000;
+          font-family: $Rubik;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-right: 40px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .projects_elem__url {
+        position: relative;
+        z-index: 2;
+
+        a {
+          font-family: $IBM;
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 66px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  padding-bottom: 294px;
+  .title {
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 113px;
+    font-family: $Gosha;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact_box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 510px;
+    align-self: flex-end;
+    a {
+      color: #000000;
+      font-family: $Rubik;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 66px;
     }
   }
 }
