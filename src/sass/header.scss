@@ -3,6 +3,42 @@
   padding: 30px 0 26px;
   position: relative;
   z-index: 3;
+  transition: top $time, background $time;
+  &.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f0f0f0;
+  }
+  &.animation {
+    .container {
+      &:after {
+        width: 0;
+        transition: 1s ease-in-out .4s;
+      }
+    }
+    .header_main__left, .header_main__menu {
+      position: absolute;
+      top: -10vh;
+      opacity: 0;
+      transition: .8s ease-in-out .1s;
+    }
+
+    &.active {
+      .container {
+        &:after {
+          width: 100%;
+        }
+      }
+      .header_main__left, .header_main__menu {
+        opacity: 1;
+        position: relative;
+        top: 0;
+      }
+    }
+  }
+
 
   .container {
     display: flex;

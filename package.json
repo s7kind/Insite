@@ -42,7 +42,7 @@
   "dependencies": {
     "flatpickr": "^4.5.1",
     "scroll-parallax": "^2.1.0",
-    "scrollreveal": "^4.0.0",
+    "scrollreveal": "^4.0.5",
     "vanilla-text-mask": "^5.0.1",
     "videojs-youtube": "^2.6.0",
     "xhr": "^2.5.0"
